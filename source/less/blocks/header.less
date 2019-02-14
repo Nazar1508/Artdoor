@@ -54,6 +54,14 @@
   }
 }
 
+.header__basket:hover {
+  opacity: 0.7;
+}
+
+.header__basket:active {
+  opacity: 0.5;
+}
+
 .header__basket-selected {
   position: absolute;
   top: -9px;
@@ -71,4 +79,170 @@
 
 .header__basket-description {
   margin: 0;
+}
+
+.header__bottom {
+  background-color: @black;
+}
+
+.header__bottom-wrapper {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.header__main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__site-list {
+  .list-reset();
+}
+
+.header__catalog {
+  position: relative;
+}
+
+.header__catalog-list {
+  .list-reset();
+  position: absolute;
+  z-index: 2;
+  width: 255px;
+  box-sizing: border-box;
+  border: 1px solid #dadada;
+}
+
+.header__catalog-button {
+  .button-reset();
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 1.5px solid @black;
+    border-top: none;
+    border-left: none;
+    transform: rotate(-45deg);
+  }
+}
+
+.header__catalog-button:hover::after {
+  border-color: #ffffff;
+}
+
+.header__catalog-link {
+  display: block;
+  color: @black;
+  text-decoration: none;
+}
+
+.header__catalog-button,
+.header__catalog-link {
+  width: 100%;
+  padding: 22.3px 35px 22px 25px;
+  font-size: 16px;
+  text-align: left;
+  color: @black;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dadada;
+
+  &:hover {
+    color: #ffffff;
+    background-color: @red;
+  }
+}
+
+.header__catalog-link--last {
+  border: none;
+}
+
+.header__catalog-title {
+  .button-reset();
+}
+
+.header__slider-wrapper {
+  position: relative;
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.header__slider-list {
+  .list-reset();
+  display: flex;
+  width: 855px;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.header__slider-item {
+  display: flex;
+  flex-shrink: 0;
+  width: 855px;
+  min-height: 447px;
+  box-sizing: border-box;
+  padding: 21px 50px;
+  background-color: #e9e9e9;
+  background-image: url("../img/bg-red-triange.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 100px;
+}
+
+.header__slider-description {
+  width: 345px;
+  margin-top: 70px;
+}
+
+.header__slider-title {
+  margin: 0;
+  font-size: 36px;
+  color: @black;
+}
+
+.header__slider-text {
+  margin: 0;
+  margin-top: 13px;
+  font-size: 24px;
+}
+
+.header__slider-link {
+  margin-top: 21px;
+}
+
+.header__slider-image {
+  min-width: auto;
+  margin-left: 20px;
+}
+
+.header__slider-switches {
+  position: absolute;
+  left: 305px;
+  bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+}
+
+.header__slider-button {
+  .button-reset();
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1.5px solid @black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header__slider-button--active {
+  width: 22px;
+  height: 22px;
+  background-color: @black;
 }
