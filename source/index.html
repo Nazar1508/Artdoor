@@ -13,8 +13,8 @@
     <div class="header__top">
       <div class="header__top-wrapper">
         <div class="header__numbers numbers">
-          <a class="numbers__link" href="tel:048)702-24-04">048) 702-24-04</a>
-          <a class="numbers__link" href="tel:(067)482-22-14">(067) 482-22-14</a>
+          <a class="header__numbers-link numbers__link" href="tel:048)702-24-04">048) 702-24-04</a>
+          <a class="header__numbers-link numbers__link" href="tel:(067)482-22-14">(067) 482-22-14</a>
         </div>
         <a class="header__order-link site-button" href="">Заказать звонок</a>
         <ul class="header__social social-list">
@@ -108,24 +108,49 @@
               </li>
             </ul>
           </div>
-          <ul class="header__site-list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="">О фабрике</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="">Техническая информация</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="">Доставка и оплата</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="">Контакты</a>
-            </li>
-          </ul>
+          <div class="header__menu">
+            <button class="header__menu-switch">Меню</button>
+            <ul class="header__site-list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="">О фабрике</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="">Техническая информация</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="">Доставка и оплата</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </nav>
+        <ul class="header__bottom-social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--white" href="">
+              <img class="social-list__icon" src="img/icon/instagram-white-icon.png" alt="Instagramm">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--white" href="">
+              <img class="social-list__icon" src="img/icon/youtube-white-icon.png" alt="Youtube">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--white" href="">
+              <img class="social-list__icon" src="img/icon/twitter-white-icon.png" alt="Twitter">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--white" href="">
+              <img class="social-list__icon" src="img/icon/facebook-white-icon.png" alt="Facebook">
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="header__slider">
@@ -138,7 +163,10 @@
                 <p class="header__slider-text">НОВЫЕ ПОСТУПЛЕНИЯ</p>
                 <a class="header__slider-link site-button site-button--slider" href="">Подробнее</a>
               </div>
-              <img class="header__slider-image" src="img/door1.png" width="285" height="397" alt="Двери">
+              <picture>
+                <source media="(max-width: 1200px)" srcset="img/door1-tablet.png 1x">
+                <img class="header__slider-image" src="img/door1.png" alt="Двери">
+              </picture>
             </li>
             <li class="header__slider-item">
               <div class="header__slider-description">
@@ -146,7 +174,10 @@
                 <p class="header__slider-text">НОВЫЕ ПОСТУПЛЕНИЯ</p>
                 <a class="header__slider-link site-button site-button--slider" href="">Подробнее</a>
               </div>
-              <img class="header__slider-image" src="img/door1.png" width="285" height="397" alt="Двери">
+              <picture>
+                <source media="(max-width: 1200px)" srcset="img/door1-tablet.png 1x">
+                <img class="header__slider-image" src="img/door1.png" alt="Двери">
+              </picture>
             </li>
           </ul>
           <div class="header__slider-switches">
@@ -220,7 +251,10 @@
     </section>
     <section class="sale">
       <div class="sale__wrapper">
-        <img class="sale__image" src="img/sale-image.png" alt="Дверь">
+        <picture>
+          <source media="(max-width: 1200px)" srcset="img/sale-image-tablet.png">
+          <img class="sale__image" src="img/sale-image.png" alt="Дверь">
+        </picture>
         <div class="sale__description">
           <h2 class="sale__tile">Рaспродажа!</h2>
           <strong class="sale__collection-name">Коллекция Art Line</strong>
@@ -239,7 +273,10 @@
             <ul class="slider__list">
               <li class="slider__item slider__item--short">
                 <p class="slider__date">27 <span>июля</span></p>
-                <img class="slider__image" src="img/slider-news1.jpg" alt="Дверь">
+                <picture>
+                  <source media="(max-width: 1200px)" srcset="img/slider-news1-tablet.jpg 1x">
+                  <img class="slider__image" src="img/slider-news1.jpg" alt="Дверь">
+                </picture>
                 <h3 class="slider__title">Какие двери выбрать?</h3>
                 <p class="slider__description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
@@ -248,7 +285,10 @@
               </li>
               <li class="slider__item slider__item--short">
                 <p class="slider__date">27 <span>июля</span></p>
-                <img class="slider__image" src="img/slider-news2.jpg" alt="Дверь">
+                <picture>
+                  <source media="(max-width: 1200px)" srcset="img/slider-news2-tablet.jpg 1x">
+                  <img class="slider__image" src="img/slider-news2.jpg" alt="Дверь">
+                </picture>
                 <h3 class="slider__title">Какой лучше материал?</h3>
                 <p class="slider__description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
@@ -257,7 +297,10 @@
               </li>
               <li class="slider__item slider__item--short">
                 <p class="slider__date">27 <span>июля</span></p>
-                <img class="slider__image" src="img/slider-news3.jpg" alt="Дверь">
+                <picture>
+                  <source media="(max-width: 1200px)" srcset="img/slider-news3-tablet.jpg 1x">
+                  <img class="slider__image" src="img/slider-news3.jpg" alt="Дверь">
+                </picture>
                 <h3 class="slider__title">Орех или дуб, что выбрать?</h3>
                 <p class="slider__description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
@@ -272,10 +315,12 @@
           </div>
         </div>
         <form class="news__form" action="#" method="POST">
-          <h3 class="news__form-title">E-mail рассылка</h3>
-          <p class="news__form-description">
-            Подпишись на нашу e-mail рассылку для получения свежих товаров, акционных товаров, новосте и распродаж.
-          </p>
+          <div class="news__form-top">
+            <h3 class="news__form-title">E-mail рассылка</h3>
+            <p class="news__form-description">
+              Подпишись на нашу e-mail рассылку для получения свежих товаров, акционных товаров, новосте и распродаж.
+            </p>
+          </div>
           <label class="visually-hidden" for="email">Введите e-mail адрес</label>
           <input class="news__form-input" type="email" name="email" id="email" placeholder="Введите e-mail адрес" required>
           <button class="news__form-button site-button site-button--wide" type="submit">Подписаться</button>
@@ -284,7 +329,7 @@
     </section>
     <section class="about-shop">
       <div class="about-shop__wrapper">
-        <h2 class="about-shop__title site-title site-title--short">О МАГАЗИНЕ</h2>
+        <h2 class="about-shop__title site-title">О МАГАЗИНЕ</h2>
         <p class="about-shop__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         </p>

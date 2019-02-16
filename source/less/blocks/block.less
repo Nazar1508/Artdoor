@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: column;
   width: 540px;
-  min-height: 168px;
+  min-height: 268px;
   margin-left: auto;
   box-sizing: border-box;
   padding: 25px;
@@ -72,4 +72,29 @@
 .block__action-link {
   margin-top: auto;
   margin-left: auto;
+}
+
+
+@media (max-width: 1200px) {
+  .block__wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 728px;
+  }
+
+  .block__catalog,
+  .block__master,
+  .block__action {
+    flex-grow: 1;
+  }
+
+  .block__master {
+    margin-left: 40px;
+  }
+
+  .block__action {
+    min-height: 362px;
+    margin-left: 0;
+    margin-top: 36px;
+  }
 }

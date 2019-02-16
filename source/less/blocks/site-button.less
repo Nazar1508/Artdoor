@@ -30,6 +30,14 @@
   padding-bottom: 16px;
   font-weight: 400;
   pointer-events: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    color: #ffffff;
+  }
 }
 
 .site-button--slider,
@@ -77,5 +85,28 @@
 
   &:active {
     opacity: 0.7;
+  }
+}
+
+@media (max-width: 1200px) {
+  .site-button--catalog {
+    position: relative;
+    width: 250px;
+    padding-left: 60px;
+    text-align: left;
+    pointer-events: all;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 26.5px;
+      left: 21px;
+      width: 24px;
+      height: 1px;
+      background-color: #ffffff;
+      box-shadow:
+        0 -7px 0 0 #ffffff,
+        0 7px 0 0 #ffffff;
+    }
   }
 }

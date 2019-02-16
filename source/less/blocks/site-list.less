@@ -4,6 +4,10 @@
   width: 793px;
 }
 
+.site-list--hidden {
+  display: none;
+}
+
 .site-list__item {
   display: flex;
 }
@@ -22,5 +26,33 @@
 
   &:active {
     opacity: 0.7;
+  }
+}
+
+@media (max-width: 1200px) {
+  .site-list {
+    flex-direction: column;
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid @light-gray;
+  }
+
+  .site-list__link {
+    justify-content: flex-start;
+    width: 100%;
+    padding: 22.3px 18px 22px 25px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: @black;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-bottom: 1px solid @light-gray;
+
+    &:hover {
+      color: #ffffff;
+      background-color: @black;
+      text-decoration: none;
+    }
   }
 }

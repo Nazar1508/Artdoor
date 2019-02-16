@@ -109,7 +109,12 @@
   z-index: 2;
   width: 255px;
   box-sizing: border-box;
+  background-color: #ffffff;
   border: 1px solid #dadada;
+}
+
+.header__catalog-list--hidden {
+  display: none;
 }
 
 .header__catalog-button {
@@ -181,6 +186,7 @@
 .header__slider-list {
   .list-reset();
   display: flex;
+  align-items: flex-start;
 }
 
 .header__slider-item {
@@ -248,4 +254,132 @@
   width: 22px;
   height: 22px;
   background-color: @black;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-switch {
+  display: none;
+}
+
+.header__bottom-social {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header__top-wrapper {
+    width: 728px;
+  }
+
+  .header__numbers-link:nth-child(2) {
+    display: none;
+  }
+
+  .header__social {
+    display: none;
+  }
+
+  .header__order-link {
+    margin-left: 103px;
+  }
+
+  .header__middle-wrapper {
+    width: 728px;
+  }
+
+  .header__search-form {
+    margin-left: 60px;
+  }
+
+  .header__basket {
+    width: 54px;
+    margin-top: -27px;
+    margin-left: 56px;
+  }
+
+  .header__basket-description {
+    display: none;
+  }
+
+  .header__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 728px;
+  }
+
+  .header__catalog-list {
+    width: 250px;
+  }
+
+  .header__menu {
+    position: relative;
+    margin-left: 31px;
+  }
+
+  .header__menu-switch {
+    .button-reset();
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    padding-right: 20px;
+    font-weight: 300;
+    color: #ffffff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21.5px;
+      right: 0;
+      width: 7px;
+      height: 7px;
+      border: 1.2px solid #ffffff;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg);
+    }
+  }
+
+  .header__site-list {
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+  }
+
+  .header__main-nav {
+    justify-content: flex-start;
+  }
+
+  .header__bottom-social {
+    .list-reset();
+    display: flex;
+    margin-right: -11px;
+  }
+
+  .header__slider-wrapper {
+    width: 728px;
+  }
+
+  .header__slider-item {
+    align-items: flex-start;
+    padding-top: 56px;
+    padding-left: 32px;
+    background-position-x: 14px;
+  }
+
+  .header__slider-description {
+    margin-top: 44px;
+  }
+
+  .header__slider-switches {
+    left: 32px;
+  }
+
+  .header__slider-block,
+  .header__slider-item {
+    width: 728px;
+  }
 }

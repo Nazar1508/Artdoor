@@ -38,10 +38,12 @@
 .news__form-title {
   margin: 0;
   font-weight: normal;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .news__form-description {
+  width: 100%;
   margin: 0;
   margin-top: 10px;
   text-align: center;
@@ -64,4 +66,45 @@
 .news__form-button {
   .button-reset();
   margin-top: 15px;
+}
+
+.news__form-top {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .news__wrapper {
+    flex-direction: column;
+    width: 728px;
+  }
+
+  .news__main-block {
+    width: 100%;
+  }
+
+  .news__form {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 36px;
+    padding: 18px 26px;
+  }
+
+  .news__form-top {
+    width: 188px;
+  }
+
+  .news__form-title,
+  .news__form-description {
+    text-align: left;
+  }
+
+  .news__form-input {
+    margin-top: 0;
+    margin-left: 18px;
+  }
+
+  .news__form-button {
+    margin-top: 0;
+  }
 }
