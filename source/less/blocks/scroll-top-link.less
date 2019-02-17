@@ -2,6 +2,7 @@
   position: fixed;
   right: 5%;
   bottom: 60px;
+  z-index: 5;
   display: block;
   width: 55px;
   height: 55px;
@@ -28,4 +29,18 @@
 
 .scroll-top-link:active {
   opacity: 0.6;
+}
+
+@media (max-width: 750px) {
+  .scroll-top-link {
+    width: 39px;
+    height: 39px;
+  }
+
+  .scroll-top-link::before {
+    top: 17px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+  }
 }

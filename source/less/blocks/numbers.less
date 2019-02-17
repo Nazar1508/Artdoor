@@ -52,3 +52,29 @@
     width: 195px;
   }
 }
+
+@media (max-width: 750px) {
+  .numbers__link {
+    padding-left: 28px;
+    font-size: 18px;
+  }
+
+  .numbers__link::before {
+    top: 0;
+  }
+
+  .numbers--column {
+    width: 115px;
+  }
+
+  .numbers__link--mobile {
+    padding-left: 23px;
+    font-size: 14px;
+  }
+
+  .numbers__link--mobile::before {
+    background-image: url("../img/icon/call-icon-small.png");
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+  }
+}

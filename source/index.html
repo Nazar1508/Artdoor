@@ -164,6 +164,7 @@
                 <a class="header__slider-link site-button site-button--slider" href="">Подробнее</a>
               </div>
               <picture>
+                <source media="(max-width: 750px)" srcset="img/door1-mobile.png 1x">
                 <source media="(max-width: 1200px)" srcset="img/door1-tablet.png 1x">
                 <img class="header__slider-image" src="img/door1.png" alt="Двери">
               </picture>
@@ -175,6 +176,7 @@
                 <a class="header__slider-link site-button site-button--slider" href="">Подробнее</a>
               </div>
               <picture>
+                <source media="(max-width: 750px)" srcset="img/door1-mobile.png 1x">
                 <source media="(max-width: 1200px)" srcset="img/door1-tablet.png 1x">
                 <img class="header__slider-image" src="img/door1.png" alt="Двери">
               </picture>
@@ -218,27 +220,39 @@
         <div class="novelty__slider slider">
           <ul class="slider__list">
             <li class="slider__item">
-              <img class="slider__image" src="img/slider-door1.jpg" width="147" height="319" alt="Дверь">
+              <picture>
+                <source media="(max-width: 750px)" srcset="img/slider-door1-mobile.jpg 1x">
+                <img class="slider__image" src="img/slider-door1.jpg" alt="Дверь">
+              </picture>
               <span class="slider__item-name">К-1008 - "Грация"</span>
-              <strong class="slider__item-price">6 140 грн.</strong>
+              <strong class="slider__item-price">6 140 <span>грн.</span></strong>
               <a class="slider__link site-button site-button--details" href="">Подробнее</a>
             </li>
             <li class="slider__item">
-              <img class="slider__image" src="img/slider-door2.jpg" width="151" height="319" alt="Дверь">
+              <picture>
+                <source media="(max-width: 750px)" srcset="img/slider-door2-mobile.jpg 1x">
+                <img class="slider__image" src="img/slider-door2.jpg" alt="Дверь">
+              </picture>
               <span class="slider__item-name">M-3005 - "Гарант"</span>
-              <strong class="slider__item-price">7 240 грн.</strong>
+              <strong class="slider__item-price">7 240 <span>грн.</span></strong>
               <a class="slider__link site-button site-button--details" href="">Подробнее</a>
             </li>
             <li class="slider__item">
-              <img class="slider__image" src="img/slider-door3.jpg" width="149" height="319" alt="Дверь">
+              <picture>
+                <source media="(max-width: 750px)" srcset="img/slider-door2-mobile.jpg 1x">
+                <img class="slider__image" src="img/slider-door3.jpg" alt="Дверь">
+              </picture>
               <span class="slider__item-name">M-3007 - "Гарант"</span>
-              <strong class="slider__item-price">7 240 грн.</strong>
+              <strong class="slider__item-price">7 240 <span>грн.</span></strong>
               <a class="slider__link site-button site-button--details" href="">Подробнее</a>
             </li>
             <li class="slider__item">
-              <img class="slider__image" src="img/slider-door4.jpg" width="150" height="319" alt="Дверь">
-              <span class="slider__item-name">К-1024 - "Грация"</span>
-              <strong class="slider__item-price">6 140 грн.</strong>
+              <picture>
+                <source media="(max-width: 750px)" srcset="img/slider-door2-mobile.jpg 1x">
+                <img class="slider__image" src="img/slider-door4.jpg" alt="Дверь">
+              </picture>
+              <span class="slider__item-name">M-3007 - "Гарант"</span>
+              <strong class="slider__item-price">7 240 <span>грн.</span></strong>
               <a class="slider__link site-button site-button--details" href="">Подробнее</a>
             </li>
           </ul>
@@ -252,6 +266,7 @@
     <section class="sale">
       <div class="sale__wrapper">
         <picture>
+          <source media="(max-width: 750px)" srcset="img/sale-image-mobile.png 1x">
           <source media="(max-width: 1200px)" srcset="img/sale-image-tablet.png">
           <img class="sale__image" src="img/sale-image.png" alt="Дверь">
         </picture>
@@ -271,7 +286,7 @@
           <h2 class="news__title site-title">Новости</h2>
           <div class="news__slider slider">
             <ul class="slider__list">
-              <li class="slider__item slider__item--short">
+              <li class="slider__item slider__item--short slider__item--mobile">
                 <p class="slider__date">27 <span>июля</span></p>
                 <picture>
                   <source media="(max-width: 1200px)" srcset="img/slider-news1-tablet.jpg 1x">
@@ -283,7 +298,7 @@
                 </p>
                 <a class="slider__link site-button site-button--low" href="">Подробнее</a>
               </li>
-              <li class="slider__item slider__item--short">
+              <li class="slider__item slider__item--short slider__item--mobile">
                 <p class="slider__date">27 <span>июля</span></p>
                 <picture>
                   <source media="(max-width: 1200px)" srcset="img/slider-news2-tablet.jpg 1x">
@@ -295,7 +310,7 @@
                 </p>
                 <a class="slider__link site-button site-button--low" href="">Подробнее</a>
               </li>
-              <li class="slider__item slider__item--short">
+              <li class="slider__item slider__item--short slider__item--mobile">
                 <p class="slider__date">27 <span>июля</span></p>
                 <picture>
                   <source media="(max-width: 1200px)" srcset="img/slider-news3-tablet.jpg 1x">
@@ -318,12 +333,12 @@
           <div class="news__form-top">
             <h3 class="news__form-title">E-mail рассылка</h3>
             <p class="news__form-description">
-              Подпишись на нашу e-mail рассылку для получения свежих товаров, акционных товаров, новосте и распродаж.
+              Подпишись на нашу e-mail рассылку для получения свежих товаров, акционных товаров, новостей&nbsp;и&nbsp;распродаж.
             </p>
           </div>
           <label class="visually-hidden" for="email">Введите e-mail адрес</label>
           <input class="news__form-input" type="email" name="email" id="email" placeholder="Введите e-mail адрес" required>
-          <button class="news__form-button site-button site-button--wide" type="submit">Подписаться</button>
+          <button class="news__form-button site-button site-button--wide site-button--submit" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
@@ -396,10 +411,10 @@
         <div class="footer__contacts">
           <h4 class="footer__title">КОНТАКТЫ:</h4>
           <div class="footer__numbers numbers numbers--column">
-            <a class="numbers__link numbers__link--white numbers__link--top" href="tel:048)702-24-04">048) 702-24-04</a>
-            <a class="numbers__link numbers__link--white" href="tel:(067)482-22-14">(067) 482-22-14</a>
+            <a class="numbers__link numbers__link--white numbers__link--top numbers__link--mobile" href="tel:048)702-24-04">048) 702-24-04</a>
+            <a class="numbers__link numbers__link--white numbers__link--mobile" href="tel:(067)482-22-14">(067) 482-22-14</a>
           </div>
-          <a class="footer__contacts-link site-button" href="">Заказать звонок</a>
+          <a class="footer__contacts-link site-button site-button--contacts" href="">Заказать звонок</a>
           <div class="footer__payment-method">
             <img src="img/icon/visa-icon.png" alt="Visa">
             <img src="img/icon/mastercard-icon.png" alt="Mastercard">
