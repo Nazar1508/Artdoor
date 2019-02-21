@@ -41,8 +41,30 @@
   color: @red;
 }
 
+.breadcrumbs__link--active::after {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .breadcrumbs__wrapper {
     width: 728px;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .breadcrumbs__wrapper {
+    width: 580px;
+  }
+}
+
+@media (max-width: 620px) {
+  .breadcrumbs__wrapper {
+    width: 310px;
+  }
+
+  .breadcrumbs__list {
+    flex-wrap: wrap;
+    width: 100%;
   }
 }

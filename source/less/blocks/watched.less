@@ -3,6 +3,7 @@
 }
 
 .watched__wrapper {
+  position: relative;
   width: 1110px;
   margin: 0 auto;
 }
@@ -13,4 +14,26 @@
 
 .watched__slider {
   margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .watched__wrapper {
+    width: 728px;
+  }
+}
+
+@media (max-width: 750px) {
+  .watched__wrapper {
+    width: 580px;
+  }
+}
+
+@media (max-width: 620px) {
+  .watched {
+    margin-top: 49px;
+  }
+
+  .watched__wrapper {
+    width: 310px;
+  }
 }

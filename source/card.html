@@ -184,37 +184,51 @@
         </div>
         <div class="card__main-block">
           <div class="card__gallery">
-            <div class="card__gallery-block">
-              <ul class="card__gallery-list">
-                <li class="card__gallery-item">
-                  <button class="card__gallery-button">
-                    <img class="card__gallery-image" src="img/gallery-image-mini.jpg" alt="Дверь">
-                  </button>
-                </li>
-                <li class="card__gallery-item">
-                  <button class="card__gallery-button">
-                    <img class="card__gallery-image" src="img/gallery-image-mini.jpg" alt="Дверь">
-                  </button>
-                </li>
-                <li class="card__gallery-item">
-                  <button class="card__gallery-button">
-                    <img class="card__gallery-image" src="img/gallery-image-mini.jpg" alt="Дверь">
-                  </button>
-                </li>
-                <li class="card__gallery-item">
-                  <button class="card__gallery-button">
-                    <img class="card__gallery-image" src="img/gallery-image-mini.jpg" alt="Дверь">
-                  </button>
-                </li>
-              </ul>
-              <div class="card__gallery-switches">
-                <button class="card__gallery-switch card__gallery-switch--prew"></button>
-                <button class="card__gallery-switch card__gallery-switch--next"></button>
+            <div class="card__gallery-container">
+              <div class="card__gallery-block">
+                <ul class="card__gallery-list">
+                  <li class="card__gallery-item">
+                    <button class="card__gallery-button">
+                      <picture>
+                        <source media="(max-width: 1200px)" srcset="img/gallery-image-mini-tablet.jpg 1x">
+                        <img class="card__gallery-image" src="img/gallery-image-mini.jpg" alt="Дверь">
+                      </picture>
+                    </button>
+                  </li>
+                  <li class="card__gallery-item">
+                    <button class="card__gallery-button">
+                      <picture>
+                        <source media="(max-width: 1200px)" srcset="img/gallery-image-mini-tablet.jpg 1x">
+                        <img class="card__gallery-image" src="img/gallery-image-mini.jpg" alt="Дверь">
+                      </picture>
+                    </button>
+                  </li>
+                  <li class="card__gallery-item">
+                    <button class="card__gallery-button">
+                      <picture>
+                        <source media="(max-width: 1200px)" srcset="img/gallery-image-mini-tablet.jpg 1x">
+                        <img class="card__gallery-image" src="img/gallery-image-mini.jpg" alt="Дверь">
+                      </picture>
+                    </button>
+                  </li>
+                  <li class="card__gallery-item">
+                    <button class="card__gallery-button">
+                      <picture>
+                        <source media="(max-width: 1200px)" srcset="img/gallery-image-mini-tablet.jpg 1x">
+                        <img class="card__gallery-image" src="img/gallery-image-mini.jpg" alt="Дверь">
+                      </picture>
+                    </button>
+                  </li>
+                </ul>
+                <div class="card__gallery-switches">
+                  <button class="card__gallery-switch card__gallery-switch--prew" aria-label="Предыдущий слайд"></button>
+                  <button class="card__gallery-switch card__gallery-switch--next" aria-label="Следующий слайд"></button>
+                </div>
               </div>
             </div>
             <div class="card__gallery-preview">
               <picture>
-                <source media="(max-width: 1200px)" srcset="img/card__gallery-big-image-tablet.jpg 1x">
+                <source media="(max-width: 1200px)" srcset="img/preview-tablet.jpg 1x">
                 <img class="card__gallery-big-image" src="img/preview.jpg" alt="Дверь">
               </picture>
             </div>
@@ -325,8 +339,8 @@
                 </select>
               </p>
               <p class="card__form-other-item">
-                <label class="card__form-other-label" for="select-color">Ширина полотна:</label>
-                <select class="card__form-other-select" name="select-color" id="select-color">
+                <label class="card__form-other-label" for="select-width">Ширина полотна:</label>
+                <select class="card__form-other-select" name="select-width" id="select-width">
                   <option selected>60 мм</option>
                   <option>70 мм</option>
                   <option>80 мм</option>
@@ -334,8 +348,8 @@
                 </select>
               </p>
               <p class="card__form-other-item">
-                <label class="card__form-other-label" for="select-color">Высота полотна:</label>
-                <select class="card__form-other-select" name="select-color" id="select-color">
+                <label class="card__form-other-label" for="select-height">Высота полотна:</label>
+                <select class="card__form-other-select" name="select-height" id="select-height">
                   <option selected>2000 мм</option>
                   <option>2010 мм</option>
                   <option>2020 мм</option>
@@ -343,24 +357,24 @@
                 </select>
               </p>
               <p class="card__form-other-item">
-                <label class="card__form-other-label" for="select-color">Толщина коробки:</label>
-                <select class="card__form-other-select" name="select-color" id="select-color">
+                <label class="card__form-other-label" for="select-thickness">Толщина коробки:</label>
+                <select class="card__form-other-select" name="select-thickness" id="select-thickness">
                   <option selected>80 мм</option>
                   <option>90 мм</option>
                   <option>100 мм</option>
                 </select>
               </p>
               <p class="card__form-other-item">
-                <label class="card__form-other-label" for="select-color">Расширитель короба:</label>
-                <select class="card__form-other-select" name="select-color" id="select-color">
+                <label class="card__form-other-label" for="select-dilator">Расширитель короба:</label>
+                <select class="card__form-other-select" name="select-dilator" id="select-dilator">
                   <option selected>60 мм</option>
                   <option>70 мм</option>
                   <option>80 мм</option>
                 </select>
               </p>
               <p class="card__form-other-item">
-                <label class="card__form-other-label" for="select-color">Порог:</label>
-                <select class="card__form-other-select" name="select-color" id="select-color">
+                <label class="card__form-other-label" for="select-doorstep">Порог:</label>
+                <select class="card__form-other-select" name="select-doorstep" id="select-doorstep">
                   <option selected>Да</option>
                   <option>Нет</option>
                 </select>
@@ -376,19 +390,22 @@
                 </p>
               </div>
               <p class="card__form-other-item card__form-other-item--wide">
-                <label class="card__form-other-label card__form-other-label--wide" for="select-color">Наличник:</label>
-                <select class="card__form-other-select card__form-other-select--wide" name="select-color" id="select-color">
+                <label class="card__form-other-label card__form-other-label--wide" for="select-platband">Наличник:</label>
+                <select class="card__form-other-select card__form-other-select--wide" name="select-platband" id="select-platband">
                   <option selected>Плоский на 1 сторону</option>
                   <option>Плоский на 1 сторону</option>
                 </select>
               </p>
             </div>
             <div class="card__form-bottom">
-              <p class="card__form-bottom-text">Количество шт.</p>
-              <div class="card__form-bottom-amount">
-                <button class="card__form-amount-button card__form-amount-button--more" type="button">+</button>
-                <input type="text" value="1">
-                <button class="card__form-amount-button card__form-amount-button--less" type="button">-</button>
+              <div class="card__form-bottom-container">
+                <p class="card__form-bottom-text">Количество шт.</p>
+                <div class="card__form-bottom-amount">
+                  <button class="card__form-amount-button card__form-amount-button--more" type="button">+</button>
+                  <label class="visually-hidden" for="item-amount">Количество единиц</label>
+                  <input type="text" name="item-amount" id="item-amount" value="1">
+                  <button class="card__form-amount-button card__form-amount-button--less" type="button">-</button>
+                </div>
               </div>
               <button class="card__form-submit-button site-button site-button--big" type="submit">ЗАКАЗАТЬ</button>
             </div>
@@ -445,7 +462,7 @@
     </div>
     <section class="recommended">
       <div class="recommended__wrapper">
-        <h2 class="recommended__title site-title">Рекомендуемые товары</h2>
+        <h2 class="recommended__title site-title site-title--short">Рекомендуемые товары</h2>
         <div class="recommended__slider slider">
           <ul class="slider__list">
             <li class="slider__item">
@@ -485,7 +502,7 @@
               <a class="slider__link site-button site-button--details" href="">Подробнее</a>
             </li>
           </ul>
-          <div class="slider__switches">
+          <div class="slider__switches slider__switches--top">
             <button class="slider__button slider__button--prew" type="button" aria-label="Предыдущий слайд"></button>
             <button class="slider__button slider__button--next" type="button" aria-label="Следующий слайд"></button>
           </div>
@@ -534,7 +551,7 @@
               <a class="slider__link site-button site-button--details" href="">Подробнее</a>
             </li>
           </ul>
-          <div class="slider__switches">
+          <div class="slider__switches slider__switches--top">
             <button class="slider__button slider__button--prew" type="button" aria-label="Предыдущий слайд"></button>
             <button class="slider__button slider__button--next" type="button" aria-label="Следующий слайд"></button>
           </div>
