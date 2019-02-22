@@ -1,0 +1,50 @@
+.day-goods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 255px;
+  min-height: 397px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  border: 1px solid @light-gray;
+  background: linear-gradient(19deg, @red 0, @red 40%, #ffffff 0, #ffffff 100%);
+}
+
+.day-goods__title {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+  background-color: @black;
+}
+
+.day-goods__image {
+  margin-top: 25px;
+}
+
+.day-goods__model {
+  display: block;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .day-goods {
+    margin-top: 20px;
+    width: 229px;
+  }
+}
+
+@media (max-width: 750px) {
+  .day-goods {
+    width: 205px;
+  }
+}
+
+@media (max-width: 620px) {
+  .day-goods {
+    display: none;
+  }
+}
