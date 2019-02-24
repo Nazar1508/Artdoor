@@ -303,7 +303,7 @@
   left: 0;
   width: 17px;
   height: 17px;
-  border: 1.5px solid @light-gray;
+  border: 1px solid @light-gray;
   border-radius: 50%;
 }
 
@@ -313,11 +313,12 @@
 
 .card__form-other-input:checked + .card__form-other-label--opening::after {
   content: "";
-  top: 5.7px;
-  left: 5.5px;
+  top: 5px;
+  left: 5px;
   display: block;
   width: 9px;
   height: 9px;
+  box-sizing: border-box;
   background-color: @red;
   border: none;
   border-radius: 50%;
